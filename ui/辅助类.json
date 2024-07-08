@@ -1,0 +1,509 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Auxiliary",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "name": "连锁挖掘",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_chain_mining",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "破坏半径%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 7.0,
+                    "min": 1.0,
+                    "max": 12.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "search_distance",
+                    "format": "搜索半径%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 1.0,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "快速建造",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_fast_build",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "建造模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "fill",
+                            "name": "填充",
+                            "color": "#6495ED",
+                            "checked": true,
+                            "size": 10
+                        },
+                        {
+                            "key": "frame",
+                            "name": "框架",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "hollow",
+                            "name": "空心",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "pellet",
+                            "name": "圆球",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "cylinder",
+                            "name": "圆柱",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "cone",
+                            "name": "圆锥",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "destroy",
+                            "name": "破坏",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "radius",
+                    "format": "圆半径%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 150
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "height",
+                    "format": "圆高度%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 12,
+                    "min": 1,
+                    "max": 150
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "solid",
+                    "name": "圆实心",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "tip": "设置圆是否为实心体"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "建造距离%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 7.0,
+                    "min": 1.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "retry",
+                    "name": "失败重试",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "pick",
+                    "name": "方块/生物选择",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "line_box",
+                    "name": "绘制边框",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动钓鱼",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_fishing",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "delay",
+                    "format": "抛竿延迟%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 40
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "背包移动",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_inventory_move",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "swap",
+                    "name": "交换模式",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏左上格",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "crafting_left_top"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏右上格",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "crafting_right_top"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏左下格",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "crafting_left_bottom"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏右下格",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "crafting_right_bottom"
+                },
+                {
+                    "type": "TextView",
+                    "name": "光标格",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "cursor"
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "SAUTH登录",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_sauth_login"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "IP外进",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_join_game",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "IP.png"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "密码爆破",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "Password.png"
+            },
+            "tag": "fun_client_manager"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "联机大厅密码爆破",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_room_password_cracking"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "本地联机密码爆破",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_room_password_cracking"
+        }
+    ]
+}

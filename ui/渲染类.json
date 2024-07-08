@@ -1,0 +1,1223 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Render",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "name": "无粒子显示",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_particle",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "effect",
+                    "name": "特效",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "实体绘制",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_render",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "off": "close/绘制.png",
+                "on": "open/绘制.png",
+                "icon": "close/绘制.png"
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "draw_box",
+                    "name": "盒子",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "draw_line",
+                    "name": "连线",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "rgb",
+                    "name": "渐变",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 100.0,
+                    "min": 0.1,
+                    "max": 250.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "r",
+                    "format": "红色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 162.39,
+                    "min": 0.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "g",
+                    "format": "绿色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 127.5,
+                    "min": 0.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "b",
+                    "format": "蓝色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 255.0,
+                    "min": 0.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "line_width",
+                    "format": "宽度%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 6.0,
+                    "min": 0.1,
+                    "max": 40.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "实体数据",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_name_tags",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_name",
+                    "name": "名称",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_health",
+                    "name": "血量",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_armor",
+                    "name": "装备",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_weapon",
+                    "name": "武器",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_distance",
+                    "name": "距离",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_position",
+                    "name": "坐标",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "大小 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.00,
+                    "min": 0.1,
+                    "max": 100.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "r",
+                    "format": "红色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 162.39,
+                    "min": 0.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "g",
+                    "format": "绿色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 127.5,
+                    "min": 0.0,
+                    "max": 255.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "b",
+                    "format": "蓝色%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 255.0,
+                    "min": 0.0,
+                    "max": 255.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "箱子渲染",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_chest_esp",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_name",
+                    "name": "名称",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_distance",
+                    "name": "距离",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_position",
+                    "name": "坐标",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_count",
+                    "name": "物品数量",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_items",
+                    "name": "物品",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "大小 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.00,
+                    "min": 0.1,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "方块渲染",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_block_render",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "off": "close/渲染.png",
+                "on": "open/渲染.png",
+                "icon": "close/渲染.png"
+            },
+            "items": [
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "list",
+                    "name": "显示列表",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "add",
+                    "name": "添加",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "remove",
+                    "name": "移除",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_count",
+                    "format": "最大渲染:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 150
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:ancient_debris",
+                    "name": "远古残骸",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:obsidian",
+                    "name": "黑曜石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_diamond_ore",
+                    "name": "深层钻石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:diamond_ore",
+                    "name": "钻石矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_gold_ore",
+                    "name": "深层黄金",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:gold_ore",
+                    "name": "黄金矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_emerald_ore",
+                    "name": "深层绿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:emerald_ore",
+                    "name": "绿宝石矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_lapis_ore",
+                    "name": "深层青石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:lapis_ore",
+                    "name": "青金石矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_redstone_ore",
+                    "name": "深层红石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:redstone_ore",
+                    "name": "红石矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_iron_ore",
+                    "name": "深层铁矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:iron_ore",
+                    "name": "粗铁矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:deepslate_coal_ore",
+                    "name": "深层煤石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:coal_ore",
+                    "name": "粗煤矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:smithing_table",
+                    "name": "锻造台",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "大小%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.99,
+                    "min": 0.1,
+                    "max": 50.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "√.mp3",
+            "off_sound": "×.mp3",
+            "name": "方块透视",
+            "color": "#FFFFFF",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_xray",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:ore|ancient_debris",
+                    "name": "矿物",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:lava|water",
+                    "name": "液体",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:chest|shulker_box|barrel",
+                    "name": "箱子",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:ancient_debris",
+                    "name": "远古残骸",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_diamond_ore",
+                    "name": "深层钻石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:diamond_ore",
+                    "name": "钻石矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_gold_ore",
+                    "name": "深层黄金",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:gold_ore",
+                    "name": "黄金矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_emerald_ore",
+                    "name": "深层绿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:emerald_ore",
+                    "name": "绿宝石矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_lapis_ore",
+                    "name": "深层青石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:lapis_ore",
+                    "name": "青金石矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_redstone_ore",
+                    "name": "深层红石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:redstone_ore",
+                    "name": "红石矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_iron_ore",
+                    "name": "深层铁矿",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:iron_ore",
+                    "name": "粗铁矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:deepslate_coal_ore",
+                    "name": "深层煤石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:coal_ore",
+                    "name": "粗煤矿石",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "regex:portal|amethyst_block|ancient_debris|command_block|repeating_command_block|chain_command_block|structure_block|deny|allow|bedrock|border_block",
+                    "name": "其它",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "方块轮廓",
+            "color": "#FFFFFF",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "on_sound": "√.mp3",
+            "off_sound": "×.mp3",
+            "tag": "fun_block_outline",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "#6495ED",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "实体追踪",
+            "color": "#FFFFFF",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "on_sound": "√.mp3",
+            "off_sound": "×.mp3",
+            "tag": "fun_tracer",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "#6495ED",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "item",
+                    "name": "掉落物",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "ESP",
+            "color": "#FFFFFF",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "on_sound": "√.mp3",
+            "off_sound": "×.mp3",
+            "tag": "fun_esp",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "#6495ED",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "item",
+                    "name": "掉落物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "渲染模式",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        0
+                    ],
+                    "key": "mode",
+                    "items": [
+                        {
+                            "key": "2d",
+                            "name": "2D",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "3d",
+                            "name": "3D",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "checked": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "主界面模块",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "checked": true,
+            "tag": "fun_hud_module",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_armor",
+                    "name": "装备信息",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "array_list",
+                    "name": "显示功能信息",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "short_name",
+                    "name": "使用短名称",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "show_health",
+                    "name": "实体血条",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "字体",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        0
+                    ],
+                    "key": "font",
+                    "items": [
+                        {
+                            "key": "default",
+                            "name": "默认",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "smooth",
+                            "name": "光滑",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "ui",
+                            "name": "UI",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "unicode",
+                            "name": "Unicode",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "alpha",
+                    "format": "透明度%.1f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "cycle_speed",
+                    "format": "循环速度%.1f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 2.0,
+                    "min": 0.0,
+                    "max": 5.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "saturation",
+                    "format": "颜色饱和度%.1f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 0.8,
+                    "min": 0.0,
+                    "max": 5.0
+                }
+            ]
+        }
+    ]
+}

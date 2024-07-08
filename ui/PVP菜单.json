@@ -1,0 +1,656 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "HvH Menu",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "防击退",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_knockback"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "屏蔽粒子",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_particle"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "杀戮光环",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_killaura",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "target",
+                    "name": "选择杀戮",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "crystal",
+                    "name": "水晶",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "spin",
+                    "name": "旋转",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "action",
+                    "name": "手部动作",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "cps",
+                    "name": "CPS显示",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "ec_cps",
+                    "name": "EC绕CPS检测",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "on": "绕过EC服务器CPS检测"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "攻击速度 %d",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "攻击数量 %d",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "攻击距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 1.0,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "锁背",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_lock_behind",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "lock_target",
+                    "name": "锁定目标",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 1.0,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "环绕攻击",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_surround_attack",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "lock_target",
+                    "name": "锁定目标",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 1.0,
+                    "max": 50.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "环绕速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 20.0,
+                    "min": 1.0,
+                    "max": 50.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "碰撞箱",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_hitbox",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 0.0,
+                    "max": 100.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "大小 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 0.0,
+                    "max": 30.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自瞄",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_aimbot",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "lock_target",
+                    "name": "锁定目标",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.1,
+                    "max": 20.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "智能队友",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_smart_team",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "check_armor",
+                    "name": "排除相同头盔颜色",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "check_skin",
+                    "name": "排除空皮肤",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "on": "尝试排除没有皮肤的玩家"
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "check_regex",
+                    "name": "正则表达式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "on": "启用正则表达式匹配"
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "click_mode",
+                    "name": "点击白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "on": "点击实体加入白名单"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "regex",
+                    "name": "编辑名称正则",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "list",
+                    "name": "显示白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "add_chunk_player",
+                    "name": "添加区块白名单玩家",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "add_world_player",
+                    "name": "添加世界白名单玩家",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "remove",
+                    "name": "移除名称",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "玩家能力",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_abilities",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mayfly",
+                    "name": "获取飞行权限",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "flying",
+                    "name": "锁飞",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "noclip",
+                    "name": "穿墙",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "flySpeed",
+                    "format": "飞行速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "walkSpeed",
+                    "format": "行走速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            ]
+        }
+    ]
+}

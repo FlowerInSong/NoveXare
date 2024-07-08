@@ -1,0 +1,1051 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Packet",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "name": "快速添加物品",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_fast_add_item",
+            "on": "用于仙境家园，点击工作台即可复制手持物品",
+            "items": [
+                {
+                    "type": "TextView",
+                    "name": "丢出背包物品(除手持)",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ],
+                    "key": "drop_inv"
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_drop",
+                    "name": "自动丢出",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "on": "首次点击工作台"
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_chest",
+                    "name": "自动入箱(空箱子)",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "on": "点击目标箱子"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "崩溃服务器",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_crash_server",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "particle",
+                    "name": "粒子爆炸",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "multipleRpc",
+                    "name": "多发RPC",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "forwardRpc",
+                    "name": "转发RPC",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "antiPacket",
+                    "name": "反数据包攻击",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "dead_lock",
+                    "name": "死锁",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "数据包:%d个",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 600,
+                    "min": 1,
+                    "max": 100000
+                }
+            ],
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "其他/boom.png"
+            }
+        },
+        {
+            "type": "EditText",
+            "name": "联机假名",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "max_lines": 64,
+            "hint": "内容为空恢复默认",
+            "tag": "fun_fake_name"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "伪装等级",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_custom_growth_level",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "type",
+                    "name": "标识",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "wood",
+                            "name": "橡木",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "albizia",
+                            "name": "合欢木",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "sand",
+                            "name": "沙块",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "stone",
+                            "name": "圆石",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "iron",
+                            "name": "精铁",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "emerald",
+                            "name": "绿宝石",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "gold",
+                            "name": "黄金",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "diamond",
+                            "name": "钻石",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "purpur",
+                            "name": "紫珀",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "bedrock",
+                            "name": "基岩",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "level",
+                    "name": "等级",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "1",
+                            "name": "一级",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "2",
+                            "name": "二级",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "3",
+                            "name": "三级",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "4",
+                            "name": "四级",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "5",
+                            "name": "五级",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "零日",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rpc_zero_day",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "0",
+                    "name": "生成宠物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "1",
+                    "name": "打开宠物背包",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "2",
+                    "name": "关闭宠物背包",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "3",
+                    "name": "锁定宠物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "4",
+                    "name": "播放动作",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "5",
+                    "name": "反攻击",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "6",
+                    "name": "崩溃玩家",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "7",
+                    "name": "介绍自己",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "on": "让所有玩家介绍自己"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "8",
+                    "name": "修改模型",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "on": "让所有玩家切换模型"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "延时%d",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 20,
+                    "min": 0,
+                    "max": 60
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "编辑宠物",
+                    "color": "#FFFFFF",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "gravity": [
+                        "left"
+                    ],
+                    "key": "0"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "播放动作",
+                    "color": "#FFFFFF",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "gravity": [
+                        "left"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "播放音效",
+                    "color": "#FFFFFF",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "gravity": [
+                        "left"
+                    ],
+                    "key": "2"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "多次元背包",
+                    "color": "#FFFFFF",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "gravity": [
+                        "left"
+                    ],
+                    "key": "3"
+                },
+                {
+                    "type": "TextView",
+                    "name": "执行宠物指令",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "4"
+                },
+                {
+                    "type": "TextView",
+                    "name": "布吉岛远程商店",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "5"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "变更模型[已和谐]",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_change_model",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "操作模式",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "local",
+                            "name": "自身模型",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "tip": "修改自身模型"
+                        },
+                        {
+                            "key": "target",
+                            "name": "目标模型",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "tip": "修改点击目标模型"
+                        },
+                        {
+                            "key": "bind",
+                            "name": "修改目标为自身模型",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "tip": "绑定点击目标模型"
+                        },
+                        {
+                            "key": "bind_local",
+                            "name": "修改自身为目标模型",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "tip": "绑定为自身模型"
+                        }
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "编辑模型",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "edit_model"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "全部玩家",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "edit_all_player"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "全部实体",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "edit_all_entity"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "重置",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "reset"
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "bind_player",
+                    "name": "绑定全部玩家到目标",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "bind_entity",
+                    "name": "绑定全部实体到目标",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "loop",
+                    "name": "循环更改模型",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "random_bind_entity",
+                    "name": "随机绑定模型",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "延迟%d",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 120
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "音频控制",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_sound_engine",
+            "items": [
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "edit_id",
+                    "name": "编辑音频",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "random",
+                    "name": "随机ID",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "record",
+                    "name": "录制音频",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "on": "录制来自服务器的音效。录制时请勿打开播放"
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "play_record",
+                    "name": "播放录制",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "on": "播放录制的音频。播放时请勿打开录制"
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "播放对象",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "local",
+                            "name": "自身",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "player",
+                            "name": "玩家",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "entity",
+                            "name": "实体",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "save",
+                    "name": "保存音频",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "key": "load",
+                    "name": "加载音频",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "实体事件管理器[已和谐]",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_event_manager",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "操作对象",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "local",
+                            "name": "自身",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "target",
+                            "name": "目标",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "entity",
+                            "name": "实体",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "player",
+                            "name": "玩家",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "die",
+                    "name": "瞬间去世[已和谐]",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "respawn",
+                    "name": "复活满血[已和谐]",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "xp",
+                    "name": "增加经验",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "crash",
+                    "name": "崩溃服务器",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "join_crash",
+                    "name": "进服崩溃服务器",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "custom",
+                    "name": "自定义事件",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "修改自定义事件",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "event"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "修改掉落物数量[已和谐]",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "item",
+                    "tip": "一键修改所有掉落物数量"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "移除所有实体",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "remove_entity",
+                    "tip": "防止实体过多卡顿"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "重复发送数据包",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_multiple_packet",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "数量 %d",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 200
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "停止发送数据包",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_packet"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "网络数据包管理+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_network_packet_mgr",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "数据包.png"
+            }
+        }
+    ]
+}

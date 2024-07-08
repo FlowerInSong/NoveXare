@@ -1,0 +1,1078 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Player",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "附魔菜单[已和谐]+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_enchant_menu",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "附魔.png"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "物品编辑器[已和谐]+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_item_editor",
+            "items": [
+                {
+                    "type": "Switch",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "form_ui",
+                    "name": "使用游戏UI",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ],
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "物品.png"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "NBT编辑器[已和谐]+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_nbt_editor",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "NBT.png"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "打开商店+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_open_shop",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "icon": "商店.png"
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "传送菜单+",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_teleport_menu"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "放大镜",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_zoom",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "fov",
+                    "format": "角度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 120.0,
+                    "min": 0.0,
+                    "max": 150.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "modifier",
+                    "format": "附加值%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "调整方块距离",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_extended_block_reach",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "reach",
+                    "format": "操作距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.01,
+                    "min": 1.00,
+                    "max": 255.00
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动破坏",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_destroy",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "off": "close/破坏.png",
+                "on": "open/破坏.png",
+                "icon": "close/破坏.png"
+            },
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "破坏模式",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "line",
+                            "name": "线性",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "cross",
+                            "name": "十字",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "matrix",
+                            "name": "矩形",
+                            "color": "#6495ED",
+                            "checked": true,
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "点击破坏",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_click_destroy",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "破坏模式",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "line",
+                            "name": "线性",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "cross",
+                            "name": "十字",
+                            "color": "#6495ED",
+                            "size": 8
+                        },
+                        {
+                            "key": "matrix",
+                            "name": "矩形",
+                            "color": "#6495ED",
+                            "checked": true,
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "packet_mode",
+                    "name": "发包模式",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "vanilla",
+                            "name": "原版",
+                            "color": "#6495ED",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "nukkit",
+                            "name": "Nukkit",
+                            "color": "#6495ED",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动破坏方块",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_destroy_block",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "no_circle": true,
+                "off": "close/破坏方块.png",
+                "on": "open/破坏方块.png",
+                "icon": "close/破坏方块.png"
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:cake",
+                    "name": "蛋糕",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:bed",
+                    "name": "床",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "minecraft:dragon_egg",
+                    "name": "龙蛋",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 7.0,
+                    "min": 1.0,
+                    "max": 40.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "快速破坏",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_fast_destroy"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "箱子光环",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_chest_aura",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 1.0,
+                    "max": 50.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "ignore_screen",
+                    "name": "忽略打开过的箱子",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "快速取物",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_chest_stealer",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "delay",
+                    "format": "延时%d",
+                    "color": "#FFFFFF",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 30
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "auto_close",
+                    "name": "自动关闭",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动搭路",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "offset",
+                    "format": "高度偏移%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.0,
+                    "min": 0.0,
+                    "max": 5.0
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "force_place",
+                    "name": "强行放置",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                }
+            ],
+            "tag": "fun_auto_build",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "off": "close/搭路.png",
+                "on": "open/搭路.png",
+                "icon": "close/搭路.png"
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动图腾",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_totem"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "玩家能力",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_abilities",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "no_circle": true,
+                "off": "close/能力.png",
+                "on": "open/能力.png",
+                "icon": "close/能力.png"
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "build",
+                    "name": "建造方块",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mine",
+                    "name": "破坏方块",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "doorsandswitches",
+                    "name": "开关门",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "opencontainers",
+                    "name": "打开容器",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "attackplayers",
+                    "name": "攻击玩家",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "attackmobs",
+                    "name": "攻击生物",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "op",
+                    "name": "操作员",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "teleport",
+                    "name": "传送",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "invulnerable",
+                    "name": "单人无敌",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mayfly",
+                    "name": "飞行权限",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "flying",
+                    "name": "锁飞",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "noclip",
+                    "name": "穿墙",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "instabuild",
+                    "name": "消耗物品",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "lightning",
+                    "name": "生成闪电",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "mute",
+                    "name": "允许发言",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "worldbuilder",
+                    "name": "影响世界",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "elytra_fly",
+                    "name": "自动鞘翅",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fake_fly",
+                    "name": "伪飞行",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "flySpeed",
+                    "format": "飞行速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "walkSpeed",
+                    "format": "行走速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "免疫摔落伤害",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_fall",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "下落速度%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.1,
+                    "max": 2.0
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "vanilla",
+                    "name": "Vanilla",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mine_plex",
+                    "name": "MinePlex",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "cube_craft",
+                    "name": "CubeCraft",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "nukkit",
+                    "name": "Nukkit",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "auth_ground_pos",
+                    "name": "AuthGroundPos",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "免疫火焰伤害",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_no_fire"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动吃物",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_eat",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "fast_eat",
+                    "name": "秒吃",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "health",
+                    "format": "最低下限%.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 0.5,
+                    "max": 40.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "单人无敌",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_invincible",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "attack_hurt",
+                    "name": "攻击",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "effect_hurt",
+                    "name": "药水",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "√.mp3",
+                    "off_sound": "×.mp3",
+                    "key": "forced_hurt",
+                    "name": "强制",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "自动穿装",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_auto_armor"
+        }
+    ]
+}

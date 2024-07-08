@@ -1,0 +1,1108 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Misc",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "?",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww ?"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "崩服",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s @a[hasitem={item=wooden_sword,data=-1}]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "手持钻石的玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3手持钻石的玩家有:§e @a[hasitem={item=diamond}]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "手持钻石剑的玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3手持钻石剑的玩家有:§e @a[hasitem={item=diamond_sword}]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "手持弓的玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3手持弓的玩家有:§e @a[hasitem={item=bow}]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "查看在线玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3当前在线的玩家有:§e @a"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "查看附近的玩家(半径50)",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3附近的玩家有:§e @e[r=50,type=player]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "查看附近的生物(半径50)",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3附近的生物有:§e @e[r=50,type=!player]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "查看附近掉落物(半径50)",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3附近的掉落物有:§e @e[type=item,r=50]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "最近玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/w @s §3离你最近的玩家是:§e @p[rm=1]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "清除所有生物(除玩家)",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/kill @e[type=!player]"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "清除所有实体",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/kill @e"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "清除所有玩家",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/kill @a"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "脚下生成3*1*3的TNT平台",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/fill ~1~-1~1~-1~-1~-1 tnt"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成TNT",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon tnt ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成末影龙",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon ender_dragon ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成凋灵",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon wither ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成箭",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon arrow ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成雪球",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon snowball ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成鸡蛋",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon egg ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成末影水晶",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon ender_crystal ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成经验瓶",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon xp_bottle ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成经验球",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon xp_orb ^^2^"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生成村民",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/summon villager"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "扣L快捷键",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "L",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "icon": "L.png",
+                "no_circle": true,
+                "send_message": "L"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "GG快捷键",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "GG",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "icon": "GG.png",
+                "no_circle": true,
+                "send_message": "GG"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "扣L快捷键 网络服专用",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "!L",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "icon": "L.png",
+                "no_circle": true,
+                "send_message": "!L"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "GG快捷键 网络服专用",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "!GG",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    65,
+                    65
+                ],
+                "icon": "GG.png",
+                "no_circle": true,
+                "send_message": "!GG"
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "独 立 宣 言",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "ok兄弟们，全体目光向我看齐，看我看我，我宣布个事，我是个伞兵！没毛病ao"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "扩 列",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "cdx+1714417887,声音甜,长得漂亮,求一个长得帅的小哥哥"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "恶俗狗",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "send_message": "恶俗狗，我真的好讨厌你啊，为了你，我要玩迷你§§§§§§§§§§§§§§§§§§f世界"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "获取所有玩家皮肤",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww dumpskin /sdcard/"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "查找村庄",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww locate village"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "急迫255",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww effect 3 114514 255 false false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "速度5",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww effect 1 114514 5 false false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "伪踏空",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww effect 24 10 255 false false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "伪掉落无伤",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww effect 27 10 255 false false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "夜视",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww effect 16 114514 1 false false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "创造",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww mode 1"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "生存",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww mode 0"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "冒险",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww mode 2"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "旁观者",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww mode 3"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "聊天室 开",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww chatroom true"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "聊天室 关",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww chatroom false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "启用UI调试",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww debug true"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "关闭UI调试",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww debug false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "显示实体日志",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww log true"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "关闭实体日志",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww log false"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "白天",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww time 49000"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "黑夜",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "plugin_command": "/ww time 64000"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "退出游戏",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/hub"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "重开",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/again"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍1",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 0"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍2",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 1"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍3",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 2"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍4",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 3"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍5",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 4"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍6",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 5"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍7",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 6"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "队伍8",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                8,
+                5,
+                8
+            ],
+            "run_command": "/jointeam 7"
+        }
+    ]
+}

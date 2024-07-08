@@ -1,0 +1,28 @@
+{
+    "name": "HorionCN",
+    "ui": [
+        "Main",
+        "世界类",
+        "玩家类",
+        "攻击类",
+        "移动类",
+        "渲染类",
+        "漏洞类",
+        "辅助类",
+        "设置",
+        "调用类",
+        "PVP菜单",
+        "NoveXare",
+        "NoveXare_Auxiliary",
+        "NoveXare_Combat",
+        "NoveXare_Event",
+        "NoveXare_Misc",
+        "NoveXare_Movement",
+        "NoveXare_Player",
+        "NoveXare_Render",
+        "NoveXare_Survive",
+        "NoveXare_Message"
+    ],
+    "fun": [],
+    "script": []
+}

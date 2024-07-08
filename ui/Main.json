@@ -1,0 +1,302 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": false,
+    "title": {
+        "name": "HorionCN",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "radius": 6,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "ClickGUI",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "tag": "fun_hide"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "TestScript",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "load_script": "原神.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Script",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "load_script": "菜单.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "NoveXare",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "NoveXare"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "World",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "世界类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Player",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "玩家类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Combat",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "攻击类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Movement",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "移动类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Render",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "渲染类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Packet",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "漏洞类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Auxiliary",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "辅助类"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Settings",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "设置"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "HvH Menu",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "open": "PVP菜单"
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "Misc",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                10
+            ],
+            "open": "调用类"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "Show",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 12,
+            "padding": [
+                15,
+                5,
+                25,
+                5
+            ],
+            "tag": "fun_watermark"
+        }
+    ]
+}

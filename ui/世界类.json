@@ -1,0 +1,152 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "World",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "RadioGroup",
+            "name": "游戏模式",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_game_mode",
+            "items": [
+                {
+                    "key": "survival",
+                    "name": "生存",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "key": "create",
+                    "name": "创造",
+                    "color": "#6495ED",
+                    "size": 8
+                },
+                {
+                    "key": "adventure",
+                    "name": "冒险",
+                    "color": "#6495ED",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "游戏变速",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_timer",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "速度 %.2f",
+                    "color": "#6495ED",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 20.0,
+                    "min": 0.0,
+                    "max": 250.0
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "进入本地游戏",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_local_game"
+        },
+        {
+            "type": "TextView",
+            "name": "创建本地世界",
+            "color": "#FFFFFF",
+            "gravity": [
+                "left"
+            ],
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_create_world"
+        }
+    ]
+}
